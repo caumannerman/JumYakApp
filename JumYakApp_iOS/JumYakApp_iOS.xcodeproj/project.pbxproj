@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CC0B82329D27D7A0000D773 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B82229D27D7A0000D773 /* AppDelegate.swift */; };
+		8CC0B82529D27D7A0000D773 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B82429D27D7A0000D773 /* SceneDelegate.swift */; };
+		8CC0B82729D27D7A0000D773 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B82629D27D7A0000D773 /* ViewController.swift */; };
+		8CC0B82C29D27D7B0000D773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC0B82B29D27D7B0000D773 /* Assets.xcassets */; };
+		8CC0B82F29D27D7B0000D773 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC0B82D29D27D7B0000D773 /* LaunchScreen.storyboard */; };
+		8CC0B83729D291E30000D773 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B83629D291E30000D773 /* MainTabBarController.swift */; };
+		8CC0B83E29D293310000D773 /* TotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B83D29D293310000D773 /* TotalViewController.swift */; };
+		8CC0B84129D294570000D773 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8CC0B84029D294570000D773 /* SnapKit */; };
+		8CC0B84329D295BA0000D773 /* LunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B84229D295BA0000D773 /* LunchViewController.swift */; };
+		8CC0B84529D295CF0000D773 /* DinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B84429D295CF0000D773 /* DinnerViewController.swift */; };
+		8CC0B84729D295E60000D773 /* MeetingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B84629D295E60000D773 /* MeetingsViewController.swift */; };
+		8CC0B84929D295FB0000D773 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B84829D295FB0000D773 /* ShoppingViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8CC0B81F29D27D7A0000D773 /* JumYakApp_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JumYakApp_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC0B82229D27D7A0000D773 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8CC0B82429D27D7A0000D773 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8CC0B82629D27D7A0000D773 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CC0B82B29D27D7B0000D773 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CC0B82E29D27D7B0000D773 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CC0B83029D27D7B0000D773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CC0B83629D291E30000D773 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		8CC0B83D29D293310000D773 /* TotalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalViewController.swift; sourceTree = "<group>"; };
+		8CC0B84229D295BA0000D773 /* LunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchViewController.swift; sourceTree = "<group>"; };
+		8CC0B84429D295CF0000D773 /* DinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerViewController.swift; sourceTree = "<group>"; };
+		8CC0B84629D295E60000D773 /* MeetingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingsViewController.swift; sourceTree = "<group>"; };
+		8CC0B84829D295FB0000D773 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CC0B81C29D27D7A0000D773 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC0B84129D294570000D773 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CC0B81629D27D7A0000D773 = {
+			isa = PBXGroup;
+			children = (
+				8CC0B82129D27D7A0000D773 /* JumYakApp_iOS */,
+				8CC0B82029D27D7A0000D773 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CC0B82029D27D7A0000D773 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0B81F29D27D7A0000D773 /* JumYakApp_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CC0B82129D27D7A0000D773 /* JumYakApp_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0B83C29D2930F0000D773 /* ShoppingView */,
+				8CC0B83B29D292FF0000D773 /* MeetingsView */,
+				8CC0B83A29D292F30000D773 /* DinnerView */,
+				8CC0B83929D292E20000D773 /* LunchView */,
+				8CC0B83829D292D00000D773 /* TotalView */,
+				8CC0B82229D27D7A0000D773 /* AppDelegate.swift */,
+				8CC0B82429D27D7A0000D773 /* SceneDelegate.swift */,
+				8CC0B82629D27D7A0000D773 /* ViewController.swift */,
+				8CC0B82B29D27D7B0000D773 /* Assets.xcassets */,
+				8CC0B82D29D27D7B0000D773 /* LaunchScreen.storyboard */,
+				8CC0B83029D27D7B0000D773 /* Info.plist */,
+				8CC0B83629D291E30000D773 /* MainTabBarController.swift */,
+			);
+			path = JumYakApp_iOS;
+			sourceTree = "<group>";
+		};
+		8CC0B83829D292D00000D773 /* TotalView */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0B83D29D293310000D773 /* TotalViewController.swift */,
+			);
+			path = TotalView;
+			sourceTree = "<group>";
+		};
+		8CC0B83929D292E20000D773 /* LunchView */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0B84229D295BA0000D773 /* LunchViewController.swift */,
+			);
+			path = LunchView;
+			sourceTree = "<group>";
+		};
+		8CC0B83A29D292F30000D773 /* DinnerView */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0B84429D295CF0000D773 /* DinnerViewController.swift */,
+			);
+			path = DinnerView;
+			sourceTree = "<group>";
+		};
+		8CC0B83B29D292FF0000D773 /* MeetingsView */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0B84629D295E60000D773 /* MeetingsViewController.swift */,
+			);
+			path = MeetingsView;
+			sourceTree = "<group>";
+		};
+		8CC0B83C29D2930F0000D773 /* ShoppingView */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0B84829D295FB0000D773 /* ShoppingViewController.swift */,
+			);
+			path = ShoppingView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CC0B81E29D27D7A0000D773 /* JumYakApp_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CC0B83329D27D7B0000D773 /* Build configuration list for PBXNativeTarget "JumYakApp_iOS" */;
+			buildPhases = (
+				8CC0B81B29D27D7A0000D773 /* Sources */,
+				8CC0B81C29D27D7A0000D773 /* Frameworks */,
+				8CC0B81D29D27D7A0000D773 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JumYakApp_iOS;
+			packageProductDependencies = (
+				8CC0B84029D294570000D773 /* SnapKit */,
+			);
+			productName = JumYakApp_iOS;
+			productReference = 8CC0B81F29D27D7A0000D773 /* JumYakApp_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CC0B81729D27D7A0000D773 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					8CC0B81E29D27D7A0000D773 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 8CC0B81A29D27D7A0000D773 /* Build configuration list for PBXProject "JumYakApp_iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CC0B81629D27D7A0000D773;
+			packageReferences = (
+				8CC0B83F29D294570000D773 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = 8CC0B82029D27D7A0000D773 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CC0B81E29D27D7A0000D773 /* JumYakApp_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CC0B81D29D27D7A0000D773 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC0B82F29D27D7B0000D773 /* LaunchScreen.storyboard in Resources */,
+				8CC0B82C29D27D7B0000D773 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CC0B81B29D27D7A0000D773 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC0B82729D27D7A0000D773 /* ViewController.swift in Sources */,
+				8CC0B84929D295FB0000D773 /* ShoppingViewController.swift in Sources */,
+				8CC0B82329D27D7A0000D773 /* AppDelegate.swift in Sources */,
+				8CC0B84729D295E60000D773 /* MeetingsViewController.swift in Sources */,
+				8CC0B83729D291E30000D773 /* MainTabBarController.swift in Sources */,
+				8CC0B84329D295BA0000D773 /* LunchViewController.swift in Sources */,
+				8CC0B84529D295CF0000D773 /* DinnerViewController.swift in Sources */,
+				8CC0B83E29D293310000D773 /* TotalViewController.swift in Sources */,
+				8CC0B82529D27D7A0000D773 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8CC0B82D29D27D7B0000D773 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CC0B82E29D27D7B0000D773 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CC0B83129D27D7B0000D773 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8CC0B83229D27D7B0000D773 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CC0B83429D27D7B0000D773 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JumYakApp_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "yangjunsig.JumYakApp-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8CC0B83529D27D7B0000D773 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JumYakApp_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "yangjunsig.JumYakApp-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CC0B81A29D27D7A0000D773 /* Build configuration list for PBXProject "JumYakApp_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CC0B83129D27D7B0000D773 /* Debug */,
+				8CC0B83229D27D7B0000D773 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CC0B83329D27D7B0000D773 /* Build configuration list for PBXNativeTarget "JumYakApp_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CC0B83429D27D7B0000D773 /* Debug */,
+				8CC0B83529D27D7B0000D773 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8CC0B83F29D294570000D773 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8CC0B84029D294570000D773 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CC0B83F29D294570000D773 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8CC0B81729D27D7A0000D773 /* Project object */;
+}
