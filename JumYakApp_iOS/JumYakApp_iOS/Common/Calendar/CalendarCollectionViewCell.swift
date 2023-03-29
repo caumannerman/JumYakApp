@@ -32,7 +32,11 @@ final class CalendarCollectionViewCell: UICollectionViewCell{
         dateLabel.layer.borderWidth = 2.0
         dateLabel.text = "임시text"
         
-        contentsView.backgroundColor = .cyan
+        contentsView.backgroundColor = .systemBackground
+        
+        layer.borderWidth = 0.6
+        layer.borderColor = UIColor.lightGray.cgColor
+        layer.cornerRadius = 4.0
     }
     
     private func layout() {

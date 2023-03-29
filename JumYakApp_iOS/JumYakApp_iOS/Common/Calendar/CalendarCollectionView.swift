@@ -16,16 +16,16 @@ class CalendarCollectionView: UIView {
         let layout = UICollectionViewFlowLayout()
         
         layout.minimumLineSpacing = 0
-        layout.minimumInteritemSpacing = 0
+        layout.minimumInteritemSpacing = 1
         layout.scrollDirection = .vertical
-        
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.register( CalendarCollectionViewCell.self, forCellWithReuseIdentifier: "CalendarCollectionViewCell")
         
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.showsHorizontalScrollIndicator = true
-        collectionView.layer.borderWidth = 1.0
+        collectionView.layer.borderWidth = 0
         collectionView.layer.borderColor = UIColor.lightGray.cgColor
         collectionView.backgroundColor = .darkGray
         return collectionView
@@ -73,9 +73,13 @@ extension CalendarCollectionView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CalendarCollectionViewCell", for: indexPath) as? CalendarCollectionViewCell else { return UICollectionViewCell() }
         
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CalendarCollectionViewCell", for: indexPath) as? CalendarCollectionViewCell else { return UICollectionViewCell() }
         cell.setup(title: String(days[indexPath.row]))
+//        switch indexPath.row{
+//            case 0...6: cell.setup(title: String(indexPath.row))
+//            default: cell.setup(title: String(days[indexPath.row - 7]))
+//        }
         
         return cell
     }
@@ -83,7 +87,10 @@ extension CalendarCollectionView: UICollectionViewDataSource {
 
 extension CalendarCollectionView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        return CGSize(width: UIScreen.main.bounds.size.width / 7, height: (safeAreaLayoutGuide.layoutFrame.size.height ) / 5)
+//        switch indexPath.row{
+//        case 0...6: return CGSize(width: UIScreen.main.bounds.size.width / 7, height: 40)
+//        default: return CGSize(width: UIScreen.main.bounds.size.width / 7, height: (safeAreaLayoutGuide.layoutFrame.size.height ) / 5)
+//        }
+        return CGSize(width: (UIScreen.main.bounds.size.width - 8) / 7, height: (safeAreaLayoutGuide.layoutFrame.size.height ) / 5)
     }
 }
