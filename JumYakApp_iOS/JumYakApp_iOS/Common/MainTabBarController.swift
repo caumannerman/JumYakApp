@@ -10,11 +10,9 @@ import UIKit
 
 class MainTabBarController: UITabBarController{
     
-    
     private lazy var firstViewController: UIViewController = {
         let vc = TotalViewController()
         let tabBarItem = UITabBarItem(title: "전체", image: UIImage(systemName: "house"), tag: 0)
-        
         vc.tabBarItem = tabBarItem
         return vc
     }()
@@ -22,7 +20,6 @@ class MainTabBarController: UITabBarController{
     private lazy var secondViewController: UIViewController = {
         let vc = LunchViewController()
         let tabBarItem = UITabBarItem(title: "점심", image: UIImage(systemName: "house"), tag: 1)
-        
         vc.tabBarItem = tabBarItem
         return vc
     }()
@@ -30,7 +27,6 @@ class MainTabBarController: UITabBarController{
     private lazy var thirdViewController: UIViewController = {
         let vc = DinnerViewController()
         let tabBarItem = UITabBarItem(title: "저녁", image: UIImage(systemName: "house"), tag: 2)
-        
         vc.tabBarItem = tabBarItem
         return vc
     }()
@@ -38,7 +34,6 @@ class MainTabBarController: UITabBarController{
     private lazy var fourthViewController: UIViewController = {
         let vc = MeetingsViewController()
         let tabBarItem = UITabBarItem(title: "미팅", image: UIImage(systemName: "house"), tag: 3)
-        
         vc.tabBarItem = tabBarItem
         return vc
     }()
@@ -46,7 +41,6 @@ class MainTabBarController: UITabBarController{
     private lazy var fifthViewController: UIViewController = {
         let vc = ShoppingViewController()
         let tabBarItem = UITabBarItem(title: "샵", image: UIImage(systemName: "house"), tag: 4)
-        
         vc.tabBarItem = tabBarItem
         return vc
     }()
