@@ -8,23 +8,26 @@
 import UIKit
 
 
-class CalendarCollectionView: UIView, UICollectionViewDataSource {
+class CalendarCollectionView: UIView {
     
+    private var days: [Int] = [1, 2, 3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
     
     private lazy var calendarCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
+        
         layout.minimumLineSpacing = 10
         layout.minimumInteritemSpacing = 10
-        layout.scrollDirection = .horizontal
+        layout.scrollDirection = .vertical
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-//        collectionView.register(, forCellWithReuseIdentifier: "")
+        collectionView.register( CalendarCollectionViewCell.self, forCellWithReuseIdentifier: "CalendarCollectionViewCell")
         
         collectionView.dataSource = self
-//        collectionView.delegate = self
+        collectionView.delegate = self
         collectionView.showsHorizontalScrollIndicator = true
-        
-        collectionView.backgroundColor = .lightGray
+        collectionView.layer.borderWidth = 1.0
+        collectionView.layer.borderColor = UIColor.lightGray.cgColor
+        collectionView.backgroundColor = .darkGray
         return collectionView
     }()
     
@@ -45,7 +48,11 @@ class CalendarCollectionView: UIView, UICollectionViewDataSource {
     }
     
     func layout(){
+        [calendarCollectionView].forEach{ addSubview($0)}
         
+        calendarCollectionView.snp.makeConstraints{
+            $0.edges.equalToSuperview()
+        }
     }
     
     func attribute(){
@@ -57,17 +64,23 @@ class CalendarCollectionView: UIView, UICollectionViewDataSource {
 }
 
 
-extension CalendarCollectionView {
+extension CalendarCollectionView: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 31
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ButtonListViewCellCell", for: indexPath) as? ButtonListViewCellCell else { return UICollectionViewCell() }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CalendarCollectionViewCell", for: indexPath) as? CalendarCollectionViewCell else { return UICollectionViewCell() }
         
-        cell.setup(title: buttonElementsArr[indexPath.row])
+        cell.setup(title: String(days[indexPath.row]))
         
         return cell
+    }
+}
+
+extension CalendarCollectionView: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: UIScreen.main.bounds.size.width / 7, height: (UIScreen.main.bounds.size.width - 160) / 7 )
     }
 }

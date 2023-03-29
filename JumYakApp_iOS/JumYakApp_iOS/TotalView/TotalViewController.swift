@@ -11,7 +11,7 @@ import SnapKit
 
 class TotalViewController: UIViewController {
     
-    
+    let calendarCV = CalendarCollectionView()
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -40,7 +40,15 @@ class TotalViewController: UIViewController {
     }
     
     private func layout(){
+        [calendarCV].forEach{
+            view.addSubview($0)
+        }
         
+        calendarCV.snp.makeConstraints{
+            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).inset(160)
+            $0.left.right.equalToSuperview()
+            $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
+        }
     }
     
     
