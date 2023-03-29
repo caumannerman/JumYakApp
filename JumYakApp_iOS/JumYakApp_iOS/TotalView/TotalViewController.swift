@@ -31,6 +31,15 @@ class TotalViewController: UIViewController {
         view.backgroundColor = .systemPink
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
     private func bind(){
         
     }
@@ -45,9 +54,10 @@ class TotalViewController: UIViewController {
         }
         
         calendarCV.snp.makeConstraints{
-            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).inset(160)
+            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).inset(80)
             $0.left.right.equalToSuperview()
             $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
+            
         }
     }
     
