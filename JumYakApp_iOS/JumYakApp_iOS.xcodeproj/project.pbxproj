@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8CB1DD0229DBDB920028F59F /* TotalViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB1DD0129DBDB920028F59F /* TotalViewHeaderView.swift */; };
+		8CB1DD0729DBF2F40028F59F /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB1DD0629DBF2F40028F59F /* CalendarTableViewCell.swift */; };
+		8CB1DD0929DBF3180028F59F /* CalendarTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB1DD0829DBF3180028F59F /* CalendarTableView.swift */; };
 		8CC0B82329D27D7A0000D773 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B82229D27D7A0000D773 /* AppDelegate.swift */; };
 		8CC0B82529D27D7A0000D773 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B82429D27D7A0000D773 /* SceneDelegate.swift */; };
 		8CC0B82729D27D7A0000D773 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B82629D27D7A0000D773 /* ViewController.swift */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		8CB1DD0129DBDB920028F59F /* TotalViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalViewHeaderView.swift; sourceTree = "<group>"; };
+		8CB1DD0629DBF2F40028F59F /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCell.swift; sourceTree = "<group>"; };
+		8CB1DD0829DBF3180028F59F /* CalendarTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableView.swift; sourceTree = "<group>"; };
 		8CC0B81F29D27D7A0000D773 /* JumYakApp_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JumYakApp_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC0B82229D27D7A0000D773 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CC0B82429D27D7A0000D773 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8CB1DD0329DBF22A0028F59F /* JumYakListView */ = {
+			isa = PBXGroup;
+			children = (
+				8CB1DD0829DBF3180028F59F /* CalendarTableView.swift */,
+				8CB1DD0629DBF2F40028F59F /* CalendarTableViewCell.swift */,
+			);
+			path = JumYakListView;
+			sourceTree = "<group>";
+		};
 		8CC0B81629D27D7A0000D773 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +151,7 @@
 		8CC0B84C29D3AD8D0000D773 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8CB1DD0329DBF22A0028F59F /* JumYakListView */,
 				8CC0B85029D413A80000D773 /* Calendar */,
 				8CC0B84F29D4139E0000D773 /* CalendarFrame */,
 				8CC0B83629D291E30000D773 /* MainTabBarController.swift */,
@@ -240,6 +254,7 @@
 			files = (
 				8CC0B85229D413C10000D773 /* CalendarFrameCollectionView.swift in Sources */,
 				8CC0B84B29D29D800000D773 /* CalendarCollectionView.swift in Sources */,
+				8CB1DD0729DBF2F40028F59F /* CalendarTableViewCell.swift in Sources */,
 				8CC0B82729D27D7A0000D773 /* ViewController.swift in Sources */,
 				8CC0B84929D295FB0000D773 /* ShoppingViewController.swift in Sources */,
 				8CC0B85429D413D00000D773 /* CalendarFrameCollectionViewCell.swift in Sources */,
@@ -252,6 +267,7 @@
 				8CC0B83E29D293310000D773 /* TotalViewController.swift in Sources */,
 				8CC0B82529D27D7A0000D773 /* SceneDelegate.swift in Sources */,
 				8CB1DD0229DBDB920028F59F /* TotalViewHeaderView.swift in Sources */,
+				8CB1DD0929DBF3180028F59F /* CalendarTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
