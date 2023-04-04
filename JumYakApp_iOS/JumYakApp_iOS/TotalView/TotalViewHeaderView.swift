@@ -43,8 +43,10 @@ class TotalViewHeaderView: UIView {
         return button
     }()
     
+    // noti-publish : Grid-List 형태로 일정을 볼 수 있게 Frame을 바꾸는 이벤트 발신
     @objc func changeButtonClicked(){
         print("button clicked")
+        NotificationCenter.default.post(name: .changeFrame, object: nil)
     }
     
     
@@ -91,8 +93,9 @@ class TotalViewHeaderView: UIView {
             $0.height.width.equalTo(30)
         }
     }
-    
-    
-    
-    
+}
+
+// noti : GridView, ListView를 변경하는 이벤트 등록
+extension Notification.Name{
+    static let changeFrame = Notification.Name("changeFrame")
 }
