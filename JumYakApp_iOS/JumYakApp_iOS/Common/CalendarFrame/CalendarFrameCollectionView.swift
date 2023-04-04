@@ -22,8 +22,8 @@ class CalendarFrameCollectionView: UIView {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.register( CalendarFrameCollectionViewCell.self, forCellWithReuseIdentifier: "CalendarFrameCollectionViewCell")
         
-//        collectionView.dataSource = self
-//        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.showsHorizontalScrollIndicator = true
         collectionView.layer.borderWidth = 0
         collectionView.layer.borderColor = UIColor.lightGray.cgColor
@@ -62,32 +62,33 @@ class CalendarFrameCollectionView: UIView {
     
 }
 
-//
-//extension CalendarCollectionView: UICollectionViewDataSource {
-//
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return days.count
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//
-//        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CalendarCollectionViewCell", for: indexPath) as? CalendarCollectionViewCell else { return UICollectionViewCell() }
+
+extension CalendarFrameCollectionView: UICollectionViewDataSource {
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 12
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CalendarFrameCollectionViewCell", for: indexPath) as? CalendarFrameCollectionViewCell else { return UICollectionViewCell() }
 //        cell.setup(title: String(days[indexPath.row]))
-////        switch indexPath.row{
-////            case 0...6: cell.setup(title: String(indexPath.row))
-////            default: cell.setup(title: String(days[indexPath.row - 7]))
-////        }
-//
-//        return cell
-//    }
-//}
-//
-//extension CalendarCollectionView: UICollectionViewDelegateFlowLayout {
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-////        switch indexPath.row{
-////        case 0...6: return CGSize(width: UIScreen.main.bounds.size.width / 7, height: 40)
-////        default: return CGSize(width: UIScreen.main.bounds.size.width / 7, height: (safeAreaLayoutGuide.layoutFrame.size.height ) / 5)
-////        }
-//        return CGSize(width: (UIScreen.main.bounds.size.width - 8) / 7, height: (safeAreaLayoutGuide.layoutFrame.size.height ) / 5)
-//    }
-//}
+        
+//        switch indexPath.row{
+//            case 0...6: cell.setup(title: String(indexPath.row))
+//            default: cell.setup(title: String(days[indexPath.row - 7]))
+//        }
+
+        return cell
+    }
+}
+
+extension CalendarFrameCollectionView: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        switch indexPath.row{
+//        case 0...6: return CGSize(width: UIScreen.main.bounds.size.width / 7, height: 40)
+//        default: return CGSize(width: UIScreen.main.bounds.size.width / 7, height: (safeAreaLayoutGuide.layoutFrame.size.height ) / 5)
+//        }
+        return CGSize(width: UIScreen.main.bounds.size.width , height: UIScreen.main.bounds.size.height - 80 )
+    }
+}
