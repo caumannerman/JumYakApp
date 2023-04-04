@@ -11,7 +11,7 @@ import SnapKit
 
 final class CalendarFrameCollectionViewCell: UICollectionViewCell{
     
-    private lazy var contentsView = UIView()
+    private lazy var ccView = CalendarCollectionView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -26,8 +26,8 @@ final class CalendarFrameCollectionViewCell: UICollectionViewCell{
     
     private func attribute(){
 //
-        
-        contentsView.backgroundColor = .systemBlue
+        contentView.backgroundColor = .cyan
+        ccView.backgroundColor = .yellow
         
         layer.borderWidth = 0.6
         layer.borderColor = UIColor.lightGray.cgColor
@@ -35,11 +35,11 @@ final class CalendarFrameCollectionViewCell: UICollectionViewCell{
     }
     
     private func layout() {
-        [ contentsView ].forEach{ addSubview($0)}
+        [ ccView ].forEach{ addSubview($0)}
         
       
-        contentsView.snp.makeConstraints{
-            $0.top.left.right.bottom.equalToSuperview()
+        ccView.snp.makeConstraints{
+            $0.edges.equalToSuperview()
         }
     }
     

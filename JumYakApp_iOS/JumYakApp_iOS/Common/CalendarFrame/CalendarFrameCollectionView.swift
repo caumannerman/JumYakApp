@@ -24,10 +24,11 @@ class CalendarFrameCollectionView: UIView {
         
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.showsHorizontalScrollIndicator = true
+//        collectionView.showsHorizontalScrollIndicator = true
         collectionView.layer.borderWidth = 0
         collectionView.layer.borderColor = UIColor.lightGray.cgColor
         collectionView.backgroundColor = .systemGreen
+        collectionView.isPagingEnabled = true
         return collectionView
     }()
     
@@ -89,6 +90,6 @@ extension CalendarFrameCollectionView: UICollectionViewDelegateFlowLayout {
 //        case 0...6: return CGSize(width: UIScreen.main.bounds.size.width / 7, height: 40)
 //        default: return CGSize(width: UIScreen.main.bounds.size.width / 7, height: (safeAreaLayoutGuide.layoutFrame.size.height ) / 5)
 //        }
-        return CGSize(width: UIScreen.main.bounds.size.width , height: UIScreen.main.bounds.size.height - 80 )
+        return CGSize(width: UIScreen.main.bounds.size.width , height: safeAreaLayoutGuide.layoutFrame.size.height  )
     }
 }

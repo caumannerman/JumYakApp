@@ -54,7 +54,7 @@ class TotalViewController: UIViewController {
         }
         
         calendarCV.snp.makeConstraints{
-            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top).inset(80)
+            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top)
             $0.left.right.equalToSuperview()
             $0.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
             

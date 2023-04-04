@@ -27,7 +27,7 @@ class CalendarCollectionView: UIView {
         collectionView.showsHorizontalScrollIndicator = true
         collectionView.layer.borderWidth = 0
         collectionView.layer.borderColor = UIColor.lightGray.cgColor
-        collectionView.backgroundColor = .darkGray
+        collectionView.backgroundColor = .magenta
         return collectionView
     }()
     
