@@ -2,42 +2,21 @@
 //  CalendarFrameCollectionView.swift
 //  JumYakApp_iOS
 //
-//  Created by 양준식 on 2023/03/29.
+//  Created by 양준식 on 2023/04/05.
 //
 
-import Foundation
 import UIKit
+import SnapKit
 
 
-class CalendarFrameCollectionView: UIView {
+class CalendarFrameCollectionView: UICollectionView {
+     
     
-    
-    private lazy var calendarFrameCollectionView: UICollectionView = {
-        let layout = UICollectionViewFlowLayout()
+    override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
+        super.init(frame: frame, collectionViewLayout: layout)
         
-        layout.minimumLineSpacing = 0
-        layout.minimumInteritemSpacing = 1
-        layout.scrollDirection = .horizontal
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.register( CalendarFrameCollectionViewCell.self, forCellWithReuseIdentifier: "CalendarFrameCollectionViewCell")
-        
-        collectionView.dataSource = self
-        collectionView.delegate = self
-//        collectionView.showsHorizontalScrollIndicator = true
-        collectionView.layer.borderWidth = 0
-        collectionView.layer.borderColor = UIColor.lightGray.cgColor
-        collectionView.backgroundColor = .systemGreen
-        collectionView.isPagingEnabled = true
-        return collectionView
-    }()
-    
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
         bind()
         attribute()
-        layout()
     }
     
     required init?(coder: NSCoder) {
@@ -45,23 +24,23 @@ class CalendarFrameCollectionView: UIView {
     }
     
     
-    
-    func bind(){
-        
-    }
-    func attribute(){
+    private func bind(){
         
     }
     
-    func layout(){
-        [calendarFrameCollectionView].forEach{ addSubview($0)}
+    private func attribute(){
         
-        calendarFrameCollectionView.snp.makeConstraints{
-            $0.edges.equalToSuperview()
-        }
+        self.register( CalendarFrameCollectionViewCell.self, forCellWithReuseIdentifier: "CalendarFrameCollectionViewCell")
+        self.layer.borderWidth = 0
+        self.layer.borderColor = UIColor.lightGray.cgColor
+        self.backgroundColor = .systemGreen
+        self.isPagingEnabled = true
+        self.dataSource = self
+        self.delegate = self
     }
     
 }
+
 
 
 extension CalendarFrameCollectionView: UICollectionViewDataSource {

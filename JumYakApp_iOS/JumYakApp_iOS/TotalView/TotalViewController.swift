@@ -12,7 +12,7 @@ import SnapKit
 class TotalViewController: UIViewController {
     
     private let totalViewHeader = TotalViewHeaderView()
-    private let calendarCV = CalendarFrameCollectionView()
+    private let calendarCV = CalendarFrameView()
     private let calendarTV = CalendarTableView()
     private var isGrid: Bool = true
     
