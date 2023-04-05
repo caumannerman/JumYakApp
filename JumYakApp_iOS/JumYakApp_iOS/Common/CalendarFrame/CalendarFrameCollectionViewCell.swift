@@ -11,7 +11,8 @@ import SnapKit
 
 final class CalendarFrameCollectionViewCell: UICollectionViewCell{
     
-    private lazy var ccView = CalendarView()
+//    private lazy var ccView = CalendarView()
+    private lazy var ccView = CalendarCollectionView(frame: .zero, collectionViewLayout: CalendarCollectionViewLayout())
     
     override init(frame: CGRect) {
         super.init(frame: frame)
